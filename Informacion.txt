@@ -10,9 +10,13 @@
 >ng g c pages/dashboard --skipTests -is
 
 --------------
->
+crea archivo rutas modulo :
+
+>ng g m appRouting --flat
 --------------
->
+se muesta cuando este autenticado:
+
+>ng g c pages/pages --flat --skipTests -is
 
 --------------
 
@@ -20,7 +24,14 @@
 --------------
 
 --------------
+-----------
+Comandos Visual studio Code
+-----------
 
+- shit + tab : al seleccionar codigo, ordena mejor el codigo html
+- ctrl + D  : busca cadenas similares y dejar cursor
+- shit + click mouse : selecciona bloques  (bajar con el scroll sino se ira derecha)
+- alt + click mouse : agrega mas cursor en el codigo
 
 --------------
 

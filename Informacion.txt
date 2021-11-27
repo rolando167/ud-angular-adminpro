@@ -23,7 +23,7 @@ Recontruir algun archivo borrado con git
 
 >git checkout -- .
 
---------------
+-------------- *************
 Dar un avance especial Version
 
 >git tag -a v1.0.0 -m "Diseño Listo"
@@ -31,6 +31,9 @@ Dar un avance especial Version
 >git tag
 
 >git push --tags
+
+--
+>git remote -v
 --------------
 crear un modulo en pages:
 

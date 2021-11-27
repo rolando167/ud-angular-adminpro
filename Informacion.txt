@@ -27,7 +27,16 @@ Recontruir algun archivo borrado con git
 Dar un avance especial Version
 
 >git tag -a v1.0.0 -m "Diseño Listo"
+
+>git tag
+
+>git push --tags
 --------------
+crear un modulo en pages:
+
+>ng g m pages/pages --flat  
+>ng g m shared/shared --flat 
+>ng g m auth/auth --flat 
 -----------
 Comandos Visual studio Code
 -----------

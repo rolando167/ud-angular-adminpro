@@ -32,8 +32,9 @@ Dar un avance especial Version
 
 >git push --tags
 
---
+--ver
 >git remote -v
+>git tag
 --------------
 crear un modulo en pages:
 

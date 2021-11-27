@@ -19,10 +19,14 @@ se muesta cuando este autenticado:
 >ng g c pages/pages --flat --skipTests -is
 
 --------------
+Recontruir algun archivo borrado con git
 
+>git checkout -- .
 
 --------------
+Dar un avance especial Version
 
+>git tag -a v1.0.0 -m "Diseño Listo"
 --------------
 -----------
 Comandos Visual studio Code

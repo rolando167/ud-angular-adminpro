@@ -11,7 +11,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -30,7 +29,7 @@ import { ComponentsModule } from '../components/components.module';
     SharedModule,
     RouterModule,
     FormsModule,
-    ComponentsModule
+    ComponentsModule,
   ]
 })
 export class PagesModule { }

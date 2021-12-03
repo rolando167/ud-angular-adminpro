@@ -6,7 +6,7 @@
             <div class="progress m-t-20">
               <div class="progress-bar bg-primary progress-bar-striped active"
                 style="height:5px;"
-
+                [style.width]="getProgeso1"
                 role="progressbar">
                 <span class="sr-only"> % Complete (success)</span>
               </div>
@@ -15,7 +15,7 @@
             <div class="progress m-t-20">
               <div class="progress-bar bg-info progress-bar-striped active"
                 style="height:5px;"
-
+                [style.width]="getProgeso2"
                 role="progressbar">
               </div>
             </div>
@@ -29,14 +29,22 @@
   <div class="col-6">
     <div class="card">
       <div class="card-body">
-        <app-incrementador [valorProgreso]="15"></app-incrementador>
+        <app-incrementador
+          (valorProgreso)="progreso1 = $event"
+          [valorProgreso]="progreso1"
+
+        ></app-incrementador>
       </div>
     </div>
   </div>
   <div class="col-6">
     <div class="card">
       <div class="card-body">
-        <app-incrementador></app-incrementador>
+        <app-incrementador
+          (valorProgreso)="progreso2 = $event"
+          [valorProgreso]="progreso2"
+          [btnClass]="'btn-info'"
+        ></app-incrementador>
       </div>
     </div>
   </div>

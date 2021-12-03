@@ -38,9 +38,9 @@ Dar un avance especial Version
 --------------
 crear un modulo en pages:
 
->ng g m pages/pages --flat  
->ng g m shared/shared --flat 
->ng g m auth/auth --flat 
+>ng g m pages/pages --flat
+>ng g m shared/shared --flat
+>ng g m auth/auth --flat
 -----------
 Comandos Visual studio Code
 -----------
@@ -49,9 +49,21 @@ Comandos Visual studio Code
 - ctrl + D  : busca cadenas similares y dejar cursor
 - shit + click mouse : selecciona bloques  (bajar con el scroll sino se ira derecha)
 - alt + click mouse : agrega mas cursor en el codigo
+- ctrl + . : VS Code tips — Implement la interface en TypeSCript, NO usar el punto de los numeros
+              o poner el cursor sobre la clase y debe aparecer un "foco", click sobre este e implentar
+(https://code.visualstudio.com/docs/editor/refactoring)
+
+-
 
 --------------
 
+Instalar 👍
+
+https://valor-software.com/ng2-charts/#/GeneralInfo
+Ambos:
+
+>npm install --save ng2-charts
+>npm install --save chart.js
 
 --------------
 

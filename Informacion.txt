@@ -66,6 +66,10 @@ Ambos:
 >npm install --save chart.js
 
 --------------
+semantica versiones
 
+v1.6.0
+
+>git tags
 --------------
 

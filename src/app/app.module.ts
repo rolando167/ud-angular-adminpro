@@ -13,7 +13,6 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
 
     NotpagefoundComponent,
-
   ],
   imports: [
     BrowserModule,

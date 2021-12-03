@@ -13,8 +13,8 @@ export class DonaComponent  {
   @Input() title:string = 'Sin titulo';
 
   // Doughnut
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [
+  @Input('labels') doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
+  @Input('data') doughnutChartData: MultiDataSet = [
     [350, 450, 100],
     [50, 150, 120],
     // [250, 130, 70],

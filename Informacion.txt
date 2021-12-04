@@ -41,6 +41,13 @@ crear un modulo en pages:
 >ng g m pages/pages --flat
 >ng g m shared/shared --flat
 >ng g m auth/auth --flat
+
+-----------
+Crear servicios:
+
+>ng g s services/settings
+
+
 -----------
 Comandos Visual studio Code
 -----------

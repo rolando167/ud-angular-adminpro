@@ -10,37 +10,21 @@ import { SettingsService } from 'src/app/services/settings.service';
 })
 export class AccountSettingsComponent implements OnInit {
 
-  public linkTheme = document.querySelector('#theme');
+  // public linkTheme = document.querySelector('#theme');
 
-  public links!: NodeListOf<Element>;
+  // public links!: NodeListOf<Element>;
 
   constructor(private settingsService: SettingsService) { }
 
   ngOnInit(): void {
-    this.links = document.querySelectorAll('.selector');
-    this.checkCurrentTheme();
+    // this.links = document.querySelectorAll('.selector');
+    this.settingsService.checkCurrentTheme();
   }
 
   changeTheme(theme: string){
 
     this.settingsService.changeTheme(theme);
-    this.checkCurrentTheme();
   }
 
-  checkCurrentTheme():void{
-
-    this.links.forEach( elem => {
-      elem.classList.remove('working');
-      const btnTheme = elem.getAttribute('data-theme');
-      const btnThemeUrl = `./assets/css/colors/${btnTheme}.css`;
-      const currentTheme = this.linkTheme?.getAttribute('href');
-
-      if( btnThemeUrl === currentTheme){
-        elem.classList.add('working');
-      }
-
-    });
-
-  }
 
 }

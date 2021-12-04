@@ -22,6 +22,26 @@ export class SettingsService {
 
     this.linkTheme?.setAttribute('href', url);
     localStorage.setItem('theme', url);
+
+    this.checkCurrentTheme();
+  }
+
+  checkCurrentTheme():void{
+
+    const links = document.querySelectorAll('.selector');
+
+    links.forEach( elem => {
+      elem.classList.remove('working');
+      const btnTheme = elem.getAttribute('data-theme');
+      const btnThemeUrl = `./assets/css/colors/${btnTheme}.css`;
+      const currentTheme = this.linkTheme?.getAttribute('href');
+
+      if( btnThemeUrl === currentTheme){
+        elem.classList.add('working');
+      }
+
+    });
+
   }
 
 }

@@ -5,5 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class SettingsService {
 
-  constructor() { }
+  private linkTheme = document.querySelector('#theme');
+
+  constructor() {
+    this.asignarTemaActual();
+  }
+
+  asignarTemaActual(){
+    const url = localStorage.getItem('theme') || './assets/css/colors/purple-dark.css';
+    this.linkTheme?.setAttribute('href', url);
+  }
 }

@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountSettingsComponent implements OnInit {
 
+  public linkTheme = document.querySelector('#theme');
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,11 +18,10 @@ export class AccountSettingsComponent implements OnInit {
 
   changeTheme(theme: string){
 
-    const linkTheme = document.querySelector('#theme');
     const url = `./assets/css/colors/${theme}.css`;
 
-    linkTheme?.setAttribute('href', url);
-
+    this.linkTheme?.setAttribute('href', url);
+    localStorage.setItem('theme', url);
   }
 
 }

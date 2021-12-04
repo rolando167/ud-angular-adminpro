@@ -45,7 +45,7 @@ crear un modulo en pages:
 -----------
 Crear servicios:
 
->ng g s services/settings
+>ng g s services/settings --skipTests
 
 
 -----------
